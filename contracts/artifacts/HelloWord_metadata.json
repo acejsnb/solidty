@@ -207,8 +207,12 @@
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {},
-			"notice": "变量的储存 storage 永久储存，会消耗 gas，比较贵 memory 存在内存中，使用后会清除，消耗 gas 3，如果大于 22 个，gas 会增加 calldata 类似 memory，比 memory 便宜，一般用在函数参数*",
+			"methods": {
+				"changeGender(uint256)": {
+					"notice": "require: 用于验证失败时，回退修改，返回 gas; revert: 用于验证失败时，回退修改，不返回 gas*"
+				}
+			},
+			"notice": "数据类型： 值类型：bool int uint address 定长字节数组 fixed ufixed enum function 引用类型：Array(不定长数组，字符串) struct mapping*",
 			"version": 1
 		}
 	},
@@ -229,11 +233,11 @@
 	},
 	"sources": {
 		"contracts/HelloWord.sol": {
-			"keccak256": "0xcd03bbc0f60641c9337d106539dee8da28ed001e3abeb9798fb6985f09bdb8c9",
+			"keccak256": "0x77a1e65fd4a360f9f76c6ec4602f15906630fb6b06e433305d09476e483bd3de",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9f44d737b0c6ea6b221892039aeaca9058c3b80da2e18531aac8775878030a87",
-				"dweb:/ipfs/QmfSHtpyei4g3kQ1WKVQXKxYdm5K14q4k91QBMegK4XSr7"
+				"bzz-raw://3cc826dd71b95edd8cad3ff11e2d9c0261dafb352ba4c8ffa4864bb910ee7eed",
+				"dweb:/ipfs/QmaMn7ikSjejWT8ievF3NtdQ1AjQgkN4epiN7cqcLh7iq8"
 			]
 		}
 	},

@@ -8,7 +8,13 @@ pragma solidity >0.8.0;
     memory 存在内存中，使用后会清除，消耗 gas 3，如果大于 22 个，gas 会增加
     calldata 类似 memory，比 memory 便宜，用在函数参数
     stack 保存很少的变量，免费使用
-    **/
+**/
+
+/**
+数据类型：
+值类型：bool int uint address 定长字节数组 fixed ufixed enum function
+引用类型：Array(不定长数组，字符串) struct mapping
+**/
 
 contract HelloWord {
     string name = unicode'小刚';
