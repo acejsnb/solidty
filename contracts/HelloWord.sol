@@ -66,10 +66,10 @@ contract HelloWord {
     struct Student {
         string name;
         string gender;
-        uint age;
+        uint8 age;
     }
     Student public student;
-    function setStudent(string calldata _name, string calldata _gender, uint _age) external {
+    function setStudent(string calldata _name, string calldata _gender, uint8 _age) external {
         student.name = _name;
         student.gender = _gender;
         student.age = _age;

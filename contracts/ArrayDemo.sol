@@ -5,6 +5,7 @@ pragma solidity >0.8.0;
 contract ArrayDemo {
     uint[] public a; // 不定长
     uint[3] public b = [1,2,3]; // 定长数组(可以不给默认值)
+    uint[2][2] c = [[1,2], [3,4]]; // 二维数组
 
     // function setArr(uint[3] memory _b) public {
     //     b = _b
@@ -32,7 +33,19 @@ contract ArrayDemo {
     function pushArr(uint val) public {
         a.push(val);
     }
+    // pop
+    function popArr() public {
+        a.pop();
+    }
     function getA() public view returns(uint[] memory) {
        return a;
+    }
+
+    // 二维数组
+    function getC() public view returns (uint[2][2] memory) {
+        return c;
+    }
+    function changeC(uint i1, uint i2, uint val) external {
+        c[i1][i2] = val;
     }
 }

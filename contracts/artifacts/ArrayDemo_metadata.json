@@ -62,6 +62,29 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "i1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "i2",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "val",
+						"type": "uint256"
+					}
+				],
+				"name": "changeC",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "getA",
 				"outputs": [
@@ -89,6 +112,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "getC",
+				"outputs": [
+					{
+						"internalType": "uint256[2][2]",
+						"name": "",
+						"type": "uint256[2][2]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "getSum",
 				"outputs": [
 					{
@@ -98,6 +134,13 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "popArr",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -142,11 +185,11 @@
 	},
 	"sources": {
 		"contracts/ArrayDemo.sol": {
-			"keccak256": "0x77fb641e8347fb26b99759435c191bfba6660ff8bff40ab04f1062b6d7127857",
+			"keccak256": "0x06456262da0fb3c6374d3a7c833c742b30e2665209c9ca636f9b000095799c04",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7e26d73d6f2a47f8503067e03441386cdce15ca472693244e3d4e976c0328d7b",
-				"dweb:/ipfs/QmcekbMr8kPJReZQiPgBt236Nw2icm4dxRBUKZiP2rocVJ"
+				"bzz-raw://7b9a830dd5dffd5b1d40a1453de23d91ac72bd67a0565289b136cf0fb3fab424",
+				"dweb:/ipfs/QmbU58BRCQBxcSnUfiCWJfPJg1bPGgQ1UEo5b4Tnsp3xSw"
 			]
 		}
 	},

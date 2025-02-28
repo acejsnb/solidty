@@ -166,9 +166,9 @@
 						"type": "string"
 					},
 					{
-						"internalType": "uint256",
+						"internalType": "uint8",
 						"name": "_age",
-						"type": "uint256"
+						"type": "uint8"
 					}
 				],
 				"name": "setStudent",
@@ -191,9 +191,9 @@
 						"type": "string"
 					},
 					{
-						"internalType": "uint256",
+						"internalType": "uint8",
 						"name": "age",
-						"type": "uint256"
+						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
@@ -233,11 +233,11 @@
 	},
 	"sources": {
 		"contracts/HelloWord.sol": {
-			"keccak256": "0x77a1e65fd4a360f9f76c6ec4602f15906630fb6b06e433305d09476e483bd3de",
+			"keccak256": "0xe207314e2909b15b8be64143169f01defa6abefbf94211e0c96c303a4478bee2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3cc826dd71b95edd8cad3ff11e2d9c0261dafb352ba4c8ffa4864bb910ee7eed",
-				"dweb:/ipfs/QmaMn7ikSjejWT8ievF3NtdQ1AjQgkN4epiN7cqcLh7iq8"
+				"bzz-raw://9efe704b9d0fa4c94eed23a2e0fcce2004843af10fe3f007b47233f8412d4d1c",
+				"dweb:/ipfs/QmS4HGEyQAGRM39Ev5s8FouF9kY2Jh5YdvHadvJm1AjE4w"
 			]
 		}
 	},
